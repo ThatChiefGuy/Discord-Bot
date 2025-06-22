@@ -77,6 +77,7 @@ async def reply(ctx):
 async def poll(ctx, *, question):
     embed = discord.Embed(title="new poll", description=question)
     await ctx.send(question, embed=embed)
+
 @bot.command()
 @commands.has_role("tata")
 async def secret(ctx):
